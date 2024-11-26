@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="en" id="HTML">
+  <head>
+    <title>Currency Convert Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body id="body">
+    <div id="header"><h1">Currency Conversion Calculator</h1></div>
+    
+
+    <div id="div1">
+      <h2>1. Select your currencies</h2>
+
+      <!-- Currency converting from -->
+      <p>
+        Converting from:
+        <select name="currency" id="currency1">
+          <option value="CAD">CAD</option>
+          <option value="USD">USD</option>
+          <option value="EURO">Euro</option>
+          <option value="RUPEES">Rupees</option>
+          <option value="YUAN">Yuan</option>
+          <option value="YEN">Yen</option>
+          <option value="PESOS">Pesos</option>
+          <option value="AUD">AUD</option>
+          <option value="POUNDS">Pounds</option>
+        </select>
+      </p>
+       <!-- Currency converting to -->
+      <p>
+        Converting to:
+        <select name="currency" id="currency2">
+          <option value="CAD">CAD</option>
+          <option value="USD">USD</option>
+          <option value="EURO">Euro</option>
+          <option value="RUPEES">Rupees</option>
+          <option value="YUAN">Yuan</option>
+          <option value="YEN">Yen</option>
+          <option value="PESOS">Pesos</option>
+          <option value="AUD">AUD</option>
+          <option value="POUNDS">Pounds</option>
+        </select>
+      </p>
+    </div>
+
+    <div id="div2">
+      <h2>2. Select the amount</h2>
+
+      <!-- Amount of currency -->
+      <input type="number" id="amount" min="0" placeholder="0" />
+    </div>
+
+    <div id="div3">
+      <h2>3. Convert</h2>
+
+      <p id="convertStatement"></p>
+      <button id="convert-btn">CONVERT</button>
+    </div>
+
+    <p id="outputContainer">Currency: <span id="output">----</span></p>
+
+    <!-- Light and dark mode buttons -->
+    <button id="lightMode">LIGHT MODE</button>
+    <button id="darkMode">DARK MODE</button>
+  </body>
+</html>
